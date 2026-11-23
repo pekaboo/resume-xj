@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#F3C9DF"/>
+
+  <!-- 浏览器窗口 -->
+  <g stroke="#2B2A57" stroke-width="8">
+    <rect x="200" y="110" width="400" height="290" rx="20" fill="#FDF8EC"/>
+  </g>
+  <path d="M200 172 h400" stroke="#2B2A57" stroke-width="6"/>
+  <circle cx="232" cy="141" r="7" fill="#E85D5D"/>
+  <circle cx="258" cy="141" r="7" fill="#F3C9DF"/>
+  <circle cx="284" cy="141" r="7" fill="#C0C4F3"/>
+  <rect x="316" y="126" width="252" height="30" rx="15" fill="#E4CFF2" stroke="#2B2A57" stroke-width="5"/>
+  <circle cx="338" cy="141" r="6" fill="#FDF8EC"/>
+  <rect x="352" y="136" width="150" height="10" rx="5" fill="#FDF8EC"/>
+
+  <!-- 页面内容：地球 -->
+  <circle cx="330" cy="266" r="66" fill="#C0C4F3" stroke="#2B2A57" stroke-width="7"/>
+  <ellipse cx="330" cy="266" rx="28" ry="66" fill="none" stroke="#2B2A57" stroke-width="4"/>
+  <ellipse cx="330" cy="266" rx="53" ry="66" fill="none" stroke="#2B2A57" stroke-width="4"/>
+  <line x1="264" y1="266" x2="396" y2="266" stroke="#2B2A57" stroke-width="4"/>
+  <path d="M298 236 Q330 210 368 232" fill="none" stroke="#6A55C8" stroke-width="6" stroke-dasharray="1 12" stroke-linecap="round"/>
+  <circle cx="298" cy="236" r="7" fill="#E85D5D" stroke="#2B2A57" stroke-width="4"/>
+  <circle cx="368" cy="232" r="7" fill="#6A55C8" stroke="#2B2A57" stroke-width="4"/>
+
+  <!-- 页面文字行 -->
+  <g stroke="#C0C4F3" stroke-width="10" stroke-linecap="round">
+    <line x1="424" y1="226" x2="560" y2="226"/>
+    <line x1="424" y1="258" x2="540" y2="258"/>
+    <line x1="424" y1="290" x2="556" y2="290"/>
+  </g>
+  <rect x="424" y="316" width="110" height="34" rx="17" fill="#6A55C8"/>
+  <path d="M460 328 l8 8 15 -17" fill="none" stroke="#FDF8EC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- RU 徽章气泡 -->
+  <g transform="rotate(8 636 128)">
+    <rect x="586" y="88" width="100" height="80" rx="22" fill="#C77DDB" stroke="#2B2A57" stroke-width="7"/>
+    <text x="636" y="142" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" fill="#FDF8EC">RU</text>
+  </g>
+  <path d="M620 172 l-8 22 26 -14z" fill="#C77DDB" stroke="#2B2A57" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- 对话气泡 -->
+  <g stroke="#2B2A57" stroke-width="6" stroke-linejoin="round">
+    <path d="M96 240 h118 q13 0 13 13 v44 q0 13 -13 13 h-72 l-20 20 v-20 h-26 q-13 0 -13 -13 v-44 q0 -13 13 -13z" fill="#E4CFF2"/>
+  </g>
+  <circle cx="132" cy="275" r="6" fill="#2B2A57"/>
+  <circle cx="158" cy="275" r="6" fill="#2B2A57"/>
+  <circle cx="184" cy="275" r="6" fill="#2B2A57"/>
+
+  <!-- 翻译箭头 -->
+  <path d="M120 150 q40 -36 92 -28" fill="none" stroke="#6A55C8" stroke-width="6" stroke-dasharray="1 13" stroke-linecap="round"/>
+  <path d="M196 108 l18 12 -20 10z" fill="#6A55C8"/>
+
+  <path d="M716 320 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5z" fill="#FDF8EC"/>
+  <circle cx="100" cy="420" r="8" fill="#FDF8EC"/>
+</svg>

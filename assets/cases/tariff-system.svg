@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#C0C4F3"/>
+
+  <!-- 数据大屏 -->
+  <g stroke="#2B2A57" stroke-width="8">
+    <rect x="330" y="120" width="380" height="250" rx="20" fill="#FDF8EC"/>
+  </g>
+  <rect x="330" y="120" width="380" height="46" rx="20" fill="#6A55C8"/>
+  <circle cx="362" cy="143" r="6" fill="#FDF8EC"/>
+  <circle cx="384" cy="143" r="6" fill="#F3C9DF"/>
+  <circle cx="406" cy="143" r="6" fill="#C0C4F3"/>
+  <rect x="358" y="190" width="34" height="140" rx="7" fill="#C0C4F3"/>
+  <rect x="406" y="226" width="34" height="104" rx="7" fill="#C77DDB"/>
+  <rect x="454" y="206" width="34" height="124" rx="7" fill="#6A55C8"/>
+  <rect x="502" y="248" width="34" height="82" rx="7" fill="#F3C9DF"/>
+  <rect x="550" y="232" width="34" height="98" rx="7" fill="#E4CFF2"/>
+  <path d="M360 200 L430 178 L500 196 L570 156 L640 168" fill="none" stroke="#2B2A57" stroke-width="5" stroke-dasharray="2 10" stroke-linecap="round"/>
+  <circle cx="570" cy="156" r="8" fill="#E85D5D" stroke="#2B2A57" stroke-width="4"/>
+  <g stroke="#2B2A57" stroke-width="7" stroke-linecap="round">
+    <line x1="470" y1="428" x2="570" y2="428"/>
+    <path d="M470 428 v-18 M570 428 v-18" fill="none"/>
+  </g>
+
+  <!-- 关税单据 + 放大镜 -->
+  <g stroke="#2B2A57" stroke-width="7">
+    <rect x="110" y="150" width="200" height="240" rx="16" fill="#FDF8EC" transform="rotate(-6 210 270)"/>
+  </g>
+  <g transform="rotate(-6 210 270)">
+    <rect x="140" y="186" width="60" height="14" rx="7" fill="#6A55C8"/>
+    <line x1="140" y1="226" x2="280" y2="226" stroke="#C0C4F3" stroke-width="9" stroke-linecap="round"/>
+    <line x1="140" y1="258" x2="266" y2="258" stroke="#C0C4F3" stroke-width="9" stroke-linecap="round"/>
+    <line x1="140" y1="290" x2="276" y2="290" stroke="#C0C4F3" stroke-width="9" stroke-linecap="round"/>
+    <line x1="140" y1="322" x2="230" y2="322" stroke="#C0C4F3" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="262" cy="348" r="22" fill="#F3C9DF" stroke="#2B2A57" stroke-width="6"/>
+    <text x="262" y="356" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#2B2A57">₽</text>
+  </g>
+  <circle cx="286" cy="150" r="42" fill="#E4CFF2" stroke="#2B2A57" stroke-width="8" opacity=".92"/>
+  <line x1="316" y1="180" x2="346" y2="210" stroke="#2B2A57" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- 齿轮 -->
+  <g transform="translate(680 392)">
+    <circle r="34" fill="#F3C9DF" stroke="#2B2A57" stroke-width="6"/>
+    <g stroke="#2B2A57" stroke-width="8" stroke-linecap="round">
+      <line x1="0" y1="-46" x2="0" y2="-34"/><line x1="0" y1="34" x2="0" y2="46"/>
+      <line x1="-46" y1="0" x2="-34" y2="0"/><line x1="34" y1="0" x2="46" y2="0"/>
+      <line x1="-33" y1="-33" x2="-24" y2="-24"/><line x1="24" y1="24" x2="33" y2="33"/>
+      <line x1="33" y1="-33" x2="24" y2="-24"/><line x1="-24" y1="24" x2="-33" y2="33"/>
+    </g>
+    <circle r="12" fill="#FDF8EC" stroke="#2B2A57" stroke-width="5"/>
+  </g>
+
+  <path d="M96 92 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5z" fill="#FDF8EC"/>
+  <circle cx="740" cy="80" r="8" fill="#FDF8EC"/>
+</svg>

@@ -400,6 +400,66 @@
         "ru": "Обязанности",
         "en": "See the role"
       }
+    },
+    {
+      "label": {
+        "zh": "项目亮点 · 2021 – 2023",
+        "ru": "Проект · 2021 – 2023",
+        "en": "Project highlight · 2021 – 2023"
+      },
+      "title": {
+        "zh": "关税数据分析与系统开发",
+        "ru": "Анализ тарифов и разработка системы",
+        "en": "Tariff analytics & system build"
+      },
+      "summary": {
+        "zh": "杭州捷网期间：统计分析中俄线路关税价格，协助开发关税系统，拓展清关代理公司合作，让关税核算更快、更透明。",
+        "ru": "В Hangzhou Jiewang: анализ тарифов на направлениях Китай–Россия, разработка тарифной системы, расширение партнёрства с брокерами — быстрее и прозрачнее.",
+        "en": "At Hangzhou Jiewang: analyzed China–Russia lane tariff prices, helped build a tariff system, and expanded customs broker partnerships — faster, more transparent tariff accounting."
+      },
+      "metrics": {
+        "zh": "关税分析, 系统开发, 代理拓展",
+        "ru": "Анализ, Система, Брокеры",
+        "en": "Tariff analysis, System, Brokers"
+      },
+      "image": "assets/cases/tariff-system.svg",
+      "color": "lavender",
+      "link": "",
+      "button": {
+        "zh": "查看职责",
+        "ru": "Обязанности",
+        "en": "See the role"
+      }
+    },
+    {
+      "label": {
+        "zh": "项目亮点 · 2017 – 2019",
+        "ru": "Проект · 2017 – 2019",
+        "en": "Project highlight · 2017 – 2019"
+      },
+      "title": {
+        "zh": "公司俄语网站翻译与推广",
+        "ru": "Перевод и продвижение сайта на русском",
+        "en": "Russian website translation & growth"
+      },
+      "summary": {
+        "zh": "上海捷网期间：负责公司俄语网站内容翻译，协助营销部门面向俄语客户推广，成为俄语客户了解公司的重要窗口。",
+        "ru": "В Shanghai Jiewang: перевод содержимого русскоязычного сайта компании и поддержка маркетинга для русскоязычных клиентов — важное окно для знакомства с компанией.",
+        "en": "At Shanghai Jiewang: translated the company's Russian website and supported marketing to Russian-speaking clients — a key window for customers to discover the company."
+      },
+      "metrics": {
+        "zh": "俄语翻译, 内容本地化, 营销支持",
+        "ru": "Перевод, Локализация, Маркетинг",
+        "en": "RU translation, Localization, Marketing"
+      },
+      "image": "assets/cases/russian-site.svg",
+      "color": "pink",
+      "link": "",
+      "button": {
+        "zh": "查看职责",
+        "ru": "Обязанности",
+        "en": "See the role"
+      }
     }
   ],
   "brands": [
