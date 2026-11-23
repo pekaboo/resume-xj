@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420">
+  <rect x="6" y="6" width="548" height="408" rx="28" fill="#FDF8EC" stroke="#C0C4F3" stroke-width="5"/>
+
+  <!-- 航线 -->
+  <path d="M84 306 C170 170 360 320 470 128" fill="none" stroke="#6A55C8" stroke-width="7" stroke-dasharray="1 16" stroke-linecap="round"/>
+
+  <!-- 中国起点 -->
+  <circle cx="84" cy="306" r="25" fill="#E85D5D" stroke="#2B2A57" stroke-width="6"/>
+  <path d="M84 294 l3.5 8 8.5 .8 -6.4 5.6 1.9 8.3 -7.5 -4.6 -7.5 4.6 1.9 -8.3 -6.4 -5.6 8.5 -.8z" fill="#FDF8EC"/>
+  <text x="84" y="362" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800" fill="#2B2A57">CN</text>
+
+  <!-- 俄罗斯终点 -->
+  <g stroke="#2B2A57" stroke-width="6" stroke-linejoin="round">
+    <path d="M470 138 q-26 30 -26 54 h52 q0 -24 -26 -54z" fill="#C77DDB"/>
+    <rect x="462" y="192" width="16" height="26" rx="4" fill="#E4CFF2"/>
+    <rect x="448" y="218" width="44" height="16" rx="5" fill="#C0C4F3"/>
+  </g>
+  <text x="470" y="72" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800" fill="#2B2A57">RU</text>
+
+  <!-- 途径节点：卡车 -->
+  <g transform="translate(178 218)">
+    <circle r="27" fill="#FDF8EC" stroke="#2B2A57" stroke-width="5"/>
+    <rect x="-16" y="-10" width="18" height="13" rx="2.5" fill="#F3C9DF" stroke="#2B2A57" stroke-width="3.5"/>
+    <path d="M2 -10 h9 l6 8 v5 h-15z" fill="#6A55C8" stroke="#2B2A57" stroke-width="3.5" stroke-linejoin="round"/>
+    <circle cx="-9" cy="6" r="4" fill="#2B2A57"/>
+    <circle cx="9" cy="6" r="4" fill="#2B2A57"/>
+  </g>
+
+  <!-- 途径节点：班列 -->
+  <g transform="translate(292 266)">
+    <circle r="27" fill="#FDF8EC" stroke="#2B2A57" stroke-width="5"/>
+    <rect x="-16" y="-12" width="32" height="16" rx="5" fill="#C0C4F3" stroke="#2B2A57" stroke-width="3.5"/>
+    <rect x="-9" y="-8" width="7" height="6" rx="1.5" fill="#FDF8EC"/>
+    <rect x="2" y="-8" width="7" height="6" rx="1.5" fill="#FDF8EC"/>
+    <circle cx="-8" cy="7" r="4" fill="#2B2A57"/>
+    <circle cx="8" cy="7" r="4" fill="#2B2A57"/>
+  </g>
+
+  <!-- 途径节点：海外仓 -->
+  <g transform="translate(390 176)">
+    <circle r="27" fill="#FDF8EC" stroke="#2B2A57" stroke-width="5"/>
+    <path d="M-15 -2 L0 -13 L15 -2 Z" fill="#E4CFF2" stroke="#2B2A57" stroke-width="3.5" stroke-linejoin="round"/>
+    <rect x="-11" y="-2" width="22" height="14" rx="2" fill="#FDF8EC" stroke="#2B2A57" stroke-width="3.5"/>
+    <rect x="-3.5" y="1" width="7" height="11" rx="1.5" fill="#6A55C8"/>
+  </g>
+
+  <!-- 小飞机 -->
+  <g transform="translate(210 96)">
+    <path d="M-18 4 q6 -10 18 -10 q10 0 12 6 l14 2 q4 1 3 4 q-1 3 -6 3 l-12 1 q-4 6 -12 6 l2 8 -4 1 -4 -9 q-8 0 -11 -12z" fill="#FDF8EC" stroke="#2B2A57" stroke-width="4" stroke-linejoin="round"/>
+  </g>
+  <path d="M120 190 Q150 130 186 108" fill="none" stroke="#C77DDB" stroke-width="4" stroke-dasharray="1 10" stroke-linecap="round"/>
+
+  <path d="M508 250 l4 11 11 4 -11 4 -4 11 -4 -11 -11 -4 11 -4z" fill="#C77DDB"/>
+  <circle cx="60" cy="120" r="6" fill="#C0C4F3"/>
+  <circle cx="510" cy="90" r="7" fill="#F3C9DF"/>
+</svg>

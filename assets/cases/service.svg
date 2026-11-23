@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#F3C9DF"/>
+
+  <!-- 人物 -->
+  <path d="M252 330 c0 -62 44 -104 96 -104 s96 42 96 104z" fill="#6A55C8" stroke="#2B2A57" stroke-width="8" stroke-linejoin="round"/>
+  <rect x="330" y="292" width="36" height="52" rx="14" fill="#F6D7BC" stroke="#2B2A57" stroke-width="6"/>
+  <path d="M262 226 c0 -58 38 -92 86 -92 s86 34 86 92 c0 34 -4 62 2 84 l4 26 c3 18 -8 32 -26 35 h-132 c-18 -3 -29 -17 -26 -35 l4 -26 c6 -22 2 -50 2 -84z" fill="#3D3A70" stroke="#2B2A57" stroke-width="7" stroke-linejoin="round"/>
+  <ellipse cx="348" cy="234" rx="62" ry="68" fill="#F6D7BC" stroke="#2B2A57" stroke-width="7"/>
+  <path d="M290 212 Q294 148 348 146 Q402 148 406 212 Q394 194 380 208 Q366 184 348 210 Q330 184 316 208 Q302 194 290 212 Z" fill="#3D3A70"/>
+  <circle cx="326" cy="240" r="8" fill="#2B2A57"/>
+  <circle cx="370" cy="240" r="8" fill="#2B2A57"/>
+  <circle cx="329" cy="237" r="2.5" fill="#FDF8EC"/>
+  <circle cx="373" cy="237" r="2.5" fill="#FDF8EC"/>
+  <path d="M334 268 q14 12 28 0" fill="none" stroke="#2B2A57" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="308" cy="262" rx="12" ry="7" fill="#F3A9C4" opacity=".8"/>
+  <ellipse cx="388" cy="262" rx="12" ry="7" fill="#F3A9C4" opacity=".8"/>
+
+  <!-- 耳机 -->
+  <path d="M282 226 q0 -78 66 -78 q66 0 66 78" fill="none" stroke="#2B2A57" stroke-width="10" stroke-linecap="round"/>
+  <rect x="266" y="216" width="24" height="42" rx="11" fill="#6A55C8" stroke="#2B2A57" stroke-width="6"/>
+  <rect x="406" y="216" width="24" height="42" rx="11" fill="#6A55C8" stroke="#2B2A57" stroke-width="6"/>
+  <path d="M278 258 q-4 30 24 36" fill="none" stroke="#2B2A57" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="306" cy="296" r="9" fill="#C77DDB" stroke="#2B2A57" stroke-width="5"/>
+
+  <!-- 桌子 -->
+  <rect x="120" y="376" width="470" height="26" rx="13" fill="#6A55C8" stroke="#2B2A57" stroke-width="7"/>
+  <line x1="170" y1="402" x2="170" y2="452" stroke="#2B2A57" stroke-width="8" stroke-linecap="round"/>
+  <line x1="540" y1="402" x2="540" y2="452" stroke="#2B2A57" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- 对话气泡 -->
+  <g stroke="#2B2A57" stroke-width="6" stroke-linejoin="round">
+    <path d="M470 76 h150 q14 0 14 14 v58 q0 14 -14 14 h-96 l-22 22 v-22 h-32 q-14 0 -14 -14 v-58 q0 -14 14 -14z" fill="#FDF8EC"/>
+  </g>
+  <circle cx="506" cy="121" r="6" fill="#2B2A57"/>
+  <circle cx="536" cy="121" r="6" fill="#2B2A57"/>
+  <circle cx="566" cy="121" r="6" fill="#2B2A57"/>
+  <g stroke="#2B2A57" stroke-width="6" stroke-linejoin="round">
+    <path d="M112 78 h128 q13 0 13 13 v50 q0 13 -13 13 h-80 l-20 20 v-20 h-28 q-13 0 -13 -13 v-50 q0 -13 13 -13z" fill="#E4CFF2"/>
+  </g>
+  <path d="M142 122 l10 10 22 -24" fill="none" stroke="#6A55C8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 数据看板 -->
+  <g stroke="#2B2A57" stroke-width="7">
+    <rect x="612" y="216" width="150" height="176" rx="18" fill="#FDF8EC"/>
+  </g>
+  <circle cx="640" cy="244" r="5" fill="#E85D5D"/>
+  <circle cx="658" cy="244" r="5" fill="#F3C9DF"/>
+  <circle cx="676" cy="244" r="5" fill="#C0C4F3"/>
+  <rect x="636" y="268" width="20" height="88" rx="6" fill="#C0C4F3"/>
+  <rect x="666" y="296" width="20" height="60" rx="6" fill="#C77DDB"/>
+  <rect x="696" y="280" width="20" height="76" rx="6" fill="#6A55C8"/>
+  <rect x="726" y="312" width="20" height="44" rx="6" fill="#F3C9DF"/>
+  <path d="M640 268 L688 250 L740 292" fill="none" stroke="#2B2A57" stroke-width="5" stroke-dasharray="2 9" stroke-linecap="round"/>
+
+  <path d="M700 120 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5z" fill="#FDF8EC"/>
+  <circle cx="92" cy="180" r="7" fill="#FDF8EC"/>
+</svg>

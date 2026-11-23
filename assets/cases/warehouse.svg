@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#C0C4F3"/>
+
+  <!-- 仓库主体 -->
+  <rect x="220" y="170" width="370" height="240" rx="10" fill="#FDF8EC" stroke="#2B2A57" stroke-width="8"/>
+  <path d="M198 178 L405 76 L612 178 Z" fill="#E4CFF2" stroke="#2B2A57" stroke-width="8" stroke-linejoin="round"/>
+
+  <!-- 招牌：纸箱图标 -->
+  <rect x="340" y="132" width="130" height="46" rx="12" fill="#6A55C8" stroke="#2B2A57" stroke-width="6"/>
+  <path d="M398 141 l14 7 v14 l-14 7 -14 -7 v-14z" fill="none" stroke="#FDF8EC" stroke-width="4" stroke-linejoin="round"/>
+  <line x1="384" y1="148" x2="412" y2="148" stroke="#FDF8EC" stroke-width="3.5"/>
+
+  <!-- 卷帘门 -->
+  <rect x="300" y="238" width="210" height="164" rx="10" fill="#E4CFF2" stroke="#2B2A57" stroke-width="7"/>
+  <line x1="310" y1="266" x2="500" y2="266" stroke="#2B2A57" stroke-width="4"/>
+  <line x1="310" y1="294" x2="500" y2="294" stroke="#2B2A57" stroke-width="4"/>
+  <line x1="310" y1="322" x2="500" y2="322" stroke="#2B2A57" stroke-width="4"/>
+  <line x1="310" y1="350" x2="500" y2="350" stroke="#2B2A57" stroke-width="4"/>
+  <line x1="310" y1="378" x2="500" y2="378" stroke="#2B2A57" stroke-width="4"/>
+
+  <!-- 侧窗 -->
+  <rect x="244" y="238" width="38" height="38" rx="8" fill="#C0C4F3" stroke="#2B2A57" stroke-width="6"/>
+  <rect x="528" y="238" width="38" height="38" rx="8" fill="#C0C4F3" stroke="#2B2A57" stroke-width="6"/>
+
+  <!-- 货箱堆 -->
+  <g stroke="#2B2A57" stroke-width="6" stroke-linejoin="round">
+    <rect x="112" y="330" width="72" height="72" rx="8" fill="#F3C9DF"/>
+    <rect x="126" y="262" width="56" height="56" rx="8" fill="#C77DDB"/>
+    <line x1="148" y1="266" x2="148" y2="316" stroke="#2B2A57" stroke-width="4"/>
+    <line x1="148" y1="334" x2="148" y2="402" stroke="#2B2A57" stroke-width="4"/>
+  </g>
+
+  <!-- 手推车 -->
+  <g stroke="#2B2A57" stroke-width="6" stroke-linecap="round">
+    <path d="M648 428 v-96 h56" fill="none"/>
+    <circle cx="648" cy="440" r="14" fill="#6A55C8"/>
+    <rect x="608" y="288" width="66" height="58" rx="8" fill="#E4CFF2" stroke-linejoin="round"/>
+    <line x1="641" y1="292" x2="641" y2="344" stroke-width="4"/>
+  </g>
+
+  <!-- 检查单 -->
+  <g stroke="#2B2A57" stroke-width="6">
+    <rect x="640" y="96" width="110" height="134" rx="14" fill="#FDF8EC"/>
+    <rect x="676" y="82" width="38" height="26" rx="8" fill="#6A55C8"/>
+  </g>
+  <line x1="662" y1="132" x2="728" y2="132" stroke="#C0C4F3" stroke-width="7" stroke-linecap="round"/>
+  <line x1="662" y1="158" x2="728" y2="158" stroke="#C0C4F3" stroke-width="7" stroke-linecap="round"/>
+  <path d="M662 196 l10 10 20 -22" fill="none" stroke="#6A55C8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M84 120 l5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5z" fill="#FDF8EC"/>
+  <circle cx="712" cy="446" r="8" fill="#FDF8EC"/>
+  <circle cx="86" cy="420" r="7" fill="#FDF8EC"/>
+</svg>

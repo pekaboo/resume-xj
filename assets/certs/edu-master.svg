@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 88">
+  <circle cx="44" cy="44" r="40" fill="#E4CFF2" stroke="#2B2A57" stroke-width="5"/>
+  <path d="M18 36 L44 25 L70 36 L44 47 Z" fill="#2B2A57" stroke="#2B2A57" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M31 41 v10 q13 9 26 0 v-10" fill="#6A55C8" stroke="#2B2A57" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M66 38 v16" stroke="#2B2A57" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="66" cy="58" r="4" fill="#F3C9DF" stroke="#2B2A57" stroke-width="2.5"/>
+  <circle cx="66" cy="66" r="13" fill="#6A55C8" stroke="#2B2A57" stroke-width="4"/>
+  <text x="66" y="70" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="800" fill="#FDF8EC">MA</text>
+</svg>

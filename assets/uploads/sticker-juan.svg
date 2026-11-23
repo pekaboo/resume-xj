@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <circle cx="200" cy="200" r="186" fill="none" stroke="#F3C9DF" stroke-width="14" stroke-dasharray="0.1 19" stroke-linecap="round"/>
+  <circle cx="200" cy="200" r="166" fill="#FDF8EC" stroke="#2B2A57" stroke-width="8"/>
+
+  <!-- 地球 + 中俄航线 -->
+  <circle cx="200" cy="142" r="58" fill="#C0C4F3" stroke="#2B2A57" stroke-width="7"/>
+  <ellipse cx="200" cy="142" rx="24" ry="58" fill="none" stroke="#2B2A57" stroke-width="4"/>
+  <ellipse cx="200" cy="142" rx="47" ry="58" fill="none" stroke="#2B2A57" stroke-width="4"/>
+  <line x1="142" y1="142" x2="258" y2="142" stroke="#2B2A57" stroke-width="4"/>
+  <path d="M164 116 Q200 88 240 112" fill="none" stroke="#6A55C8" stroke-width="6" stroke-dasharray="1 12" stroke-linecap="round"/>
+  <circle cx="164" cy="116" r="8" fill="#E85D5D" stroke="#2B2A57" stroke-width="4"/>
+  <circle cx="240" cy="112" r="8" fill="#6A55C8" stroke="#2B2A57" stroke-width="4"/>
+
+  <path d="M84 96 l5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5z" fill="#C77DDB"/>
+  <path d="M318 92 l4 11 11 4 -11 4 -4 11 -4 -11 -11 -4 11 -4z" fill="#C77DDB"/>
+
+  <text x="200" y="272" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800" fill="#2B2A57" letter-spacing="3">CN–RU</text>
+  <text x="200" y="318" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#6A55C8" letter-spacing="4">· 6 ·</text>
+</svg>

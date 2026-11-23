@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E4CFF2"/>
+      <stop offset=".55" stop-color="#C0C4F3"/>
+      <stop offset="1" stop-color="#F3C9DF"/>
+    </linearGradient>
+  </defs>
+  <rect width="620" height="1000" fill="url(#bg)"/>
+
+  <!-- 背景装饰 -->
+  <g fill="#FDF8EC" opacity=".65">
+    <circle cx="72" cy="120" r="10"/>
+    <circle cx="540" cy="92" r="14"/>
+    <circle cx="562" cy="330" r="8"/>
+    <circle cx="56" cy="402" r="7"/>
+    <path d="M92 224 l6 15 15 6 -15 6 -6 15 -6 -15 -15 -6 15 -6z"/>
+    <path d="M506 214 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5z"/>
+  </g>
+
+  <!-- 底部剪影：俄式穹顶 · 班列 · 集装箱 -->
+  <g fill="#FDF8EC" opacity=".55">
+    <path d="M118 662 q-40 44 -40 82 h80 q0 -38 -40 -82z"/>
+    <rect x="108" y="744" width="20" height="66" rx="4"/>
+    <rect x="86" y="810" width="64" height="22" rx="5"/>
+    <rect x="470" y="770" width="84" height="32" rx="6"/>
+    <rect x="482" y="738" width="60" height="32" rx="6"/>
+    <rect x="196" y="744" width="212" height="46" rx="14"/>
+    <circle cx="232" cy="798" r="11"/>
+    <circle cx="302" cy="798" r="11"/>
+    <circle cx="372" cy="798" r="11"/>
+  </g>
+
+  <!-- 后发 -->
+  <path d="M148 520 c0 -128 62 -215 162 -215 s162 87 162 215 c0 66 -4 126 4 174 l7 46 c5 31 -14 55 -45 59 h-256 c-31 -4 -50 -28 -45 -59 l7 -46 c8 -48 4 -108 4 -174z"
+        fill="#3D3A70" stroke="#2B2A57" stroke-width="8" stroke-linejoin="round"/>
+
+  <!-- 耳朵 -->
+  <circle cx="172" cy="500" r="21" fill="#F6D7BC" stroke="#2B2A57" stroke-width="7"/>
+  <circle cx="448" cy="500" r="21" fill="#F6D7BC" stroke="#2B2A57" stroke-width="7"/>
+
+  <!-- 颈部 -->
+  <rect x="276" y="672" width="68" height="120" rx="28" fill="#F6D7BC" stroke="#2B2A57" stroke-width="7"/>
+
+  <!-- 衬衫 -->
+  <path d="M260 782 q50 -20 100 0 l-38 108 q-12 8 -24 0z" fill="#FDF8EC" stroke="#2B2A57" stroke-width="7" stroke-linejoin="round"/>
+
+  <!-- 西装 -->
+  <path d="M310 776 c-72 0 -152 30 -188 72 -24 30 -33 68 -36 152 h448 c-3 -84 -12 -122 -36 -152 -36 -42 -116 -72 -188 -72z"
+        fill="#6A55C8" stroke="#2B2A57" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M310 784 l-56 40 26 62 30 -44z" fill="#FDF8EC" stroke="#2B2A57" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M310 784 l56 40 -26 62 -30 -44z" fill="#FDF8EC" stroke="#2B2A57" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- 脸 -->
+  <ellipse cx="310" cy="478" rx="136" ry="156" fill="#F6D7BC" stroke="#2B2A57" stroke-width="8"/>
+
+  <!-- 刘海 -->
+  <path d="M186 452 Q192 326 310 322 Q428 326 434 452 Q418 420 394 446 Q366 398 334 448 Q310 402 286 448 Q254 398 226 446 Q202 420 186 452 Z"
+        fill="#3D3A70"/>
+
+  <!-- 五官 -->
+  <path d="M234 444 q24 -16 46 -5" fill="none" stroke="#2B2A57" stroke-width="7" stroke-linecap="round"/>
+  <path d="M340 439 q24 -11 46 5" fill="none" stroke="#2B2A57" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="260" cy="484" r="11" fill="#2B2A57"/>
+  <circle cx="360" cy="484" r="11" fill="#2B2A57"/>
+  <circle cx="264" cy="480" r="3.5" fill="#FDF8EC"/>
+  <circle cx="364" cy="480" r="3.5" fill="#FDF8EC"/>
+  <path d="M310 502 q6 15 -3 24" fill="none" stroke="#2B2A57" stroke-width="5" stroke-linecap="round"/>
+  <path d="M272 556 q38 32 76 0" fill="none" stroke="#2B2A57" stroke-width="8" stroke-linecap="round"/>
+  <ellipse cx="228" cy="538" rx="21" ry="12" fill="#F3A9C4" opacity=".75"/>
+  <ellipse cx="392" cy="538" rx="21" ry="12" fill="#F3A9C4" opacity=".75"/>
+
+  <!-- 耳环 -->
+  <circle cx="172" cy="546" r="9" fill="#F3C9DF" stroke="#2B2A57" stroke-width="4"/>
+  <circle cx="448" cy="546" r="9" fill="#F3C9DF" stroke="#2B2A57" stroke-width="4"/>
+
+  <!-- 胸针 -->
+  <circle cx="238" cy="918" r="12" fill="#C77DDB" stroke="#2B2A57" stroke-width="5"/>
+</svg>

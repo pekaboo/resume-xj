@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144">
+  <!-- 绶带 -->
+  <path d="M56 108 l-14 30 18 -8 8 16 12 -30z" fill="#C77DDB" stroke="#2B2A57" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M88 108 l14 30 -18 -8 -8 16 -12 -30z" fill="#F3C9DF" stroke="#2B2A57" stroke-width="5" stroke-linejoin="round"/>
+  <!-- 徽章主体 -->
+  <circle cx="72" cy="64" r="54" fill="#6A55C8" stroke="#2B2A57" stroke-width="6"/>
+  <g fill="#6A55C8" stroke="#2B2A57" stroke-width="4.5">
+    <circle cx="72" cy="8" r="7"/><circle cx="102" cy="18" r="7"/><circle cx="122" cy="46" r="7"/>
+    <circle cx="122" cy="82" r="7"/><circle cx="102" cy="110" r="7"/><circle cx="72" cy="120" r="7"/>
+    <circle cx="42" cy="110" r="7"/><circle cx="22" cy="82" r="7"/><circle cx="22" cy="46" r="7"/><circle cx="42" cy="18" r="7"/>
+  </g>
+  <circle cx="72" cy="64" r="37" fill="#FDF8EC" stroke="#2B2A57" stroke-width="5"/>
+  <path d="M72 38 l3.5 8 8.5 .8 -6.4 5.6 1.9 8.3 -7.5 -4.6 -7.5 4.6 1.9 -8.3 -6.4 -5.6 8.5 -.8z" fill="#6A55C8"/>
+  <text x="72" y="79" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" fill="#2B2A57">TEM-8</text>
+</svg>

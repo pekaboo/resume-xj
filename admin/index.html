@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>内容管理面板 · 个人网站</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+@font-face { font-family: 'Irene Florentina'; src: url('../assets/fonts/IreneFlorentina-Regular.woff2') format('woff2'); }
+:root { --cream:#FDF8EC; --ink:#2B2A57; --violet:#6A55C8; --orchid:#C77DDB; --lavender:#C0C4F3; --lilac:#E4CFF2; --pink:#F3C9DF; --line:#E3E1F0; --danger:#B3261E; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Poppins, system-ui, sans-serif; color: var(--ink); background: #F4F2FB; }
+button, input, textarea, select { font: inherit; color: inherit; }
+.hand { font-family: 'Irene Florentina', Poppins, sans-serif; }
+.hidden { display: none !important; }
+.btn { border: 0; border-radius: 999px; padding: 10px 18px; font-weight: 600; cursor: pointer; background: var(--lavender); }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+.btn-ink { background: var(--ink); color: var(--cream); }
+.btn-orchid { background: var(--orchid); }
+.btn-ghost { background: transparent; border: 1.5px solid var(--line); }
+.btn-danger { background: #FBE4E2; color: var(--danger); }
+.btn-sm { padding: 6px 12px; font-size: 13px; }
+
+/* login */
+.login { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; background: repeating-linear-gradient(90deg, #BEC5F6 0 28px, #D6DAFA 28px 56px); }
+.login-card { width: 100%; max-width: 480px; background: var(--cream); border-radius: 32px; padding: 40px; }
+.login-card h1 { margin: 0 0 4px; font-size: 44px; font-weight: 400; }
+.login-card p { margin: 0 0 24px; font-size: 14px; line-height: 1.6; }
+.field { display: block; margin-bottom: 16px; }
+.field > span, .field > label > span { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+.field small { display: block; font-size: 12px; color: #5A5878; margin-top: 4px; }
+.field input, .field textarea, .field select { width: 100%; border: 1.5px solid var(--line); border-radius: 12px; padding: 10px 12px; background: #fff; }
+.field textarea { min-height: 84px; resize: vertical; line-height: 1.5; }
+.field input:focus, .field textarea:focus, .field select:focus { outline: 2px solid var(--violet); outline-offset: 1px; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.pair label > em { font-style: normal; font-size: 11px; font-weight: 700; letter-spacing: 1px; color: var(--violet); }
+.error { color: var(--danger); font-size: 13px; min-height: 18px; }
+
+/* app */
+.top { position: sticky; top: 0; z-index: 10; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 12px 20px; background: var(--cream); border-bottom: 1px solid var(--line); }
+.top .title { font-size: 28px; margin-right: auto; }
+.status { font-size: 13px; color: #5A5878; }
+.layout { display: grid; grid-template-columns: 220px minmax(0, 1fr) minmax(0, 1fr); min-height: calc(100vh - 62px); }
+.layout.no-preview { grid-template-columns: 220px minmax(0, 1fr); }
+.side { background: #fff; border-right: 1px solid var(--line); padding: 16px 12px; }
+.side button { display: block; width: 100%; text-align: left; background: none; border: 0; border-radius: 12px; padding: 10px 12px; margin-bottom: 4px; cursor: pointer; font-weight: 500; }
+.side button.active { background: var(--lilac); font-weight: 600; }
+.main { padding: 28px; overflow: auto; }
+.main h2 { margin: 0 0 4px; font-size: 26px; }
+.main .hint { margin: 0 0 20px; font-size: 14px; color: #5A5878; }
+.preview { border-left: 1px solid var(--line); background: #fff; position: sticky; top: 62px; height: calc(100vh - 62px); }
+.preview iframe { width: 100%; height: 100%; border: 0; }
+.item { background: #fff; border: 1.5px solid var(--line); border-radius: 18px; margin-bottom: 12px; }
+.item.off { opacity: .55; }
+.item-head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 12px 14px; }
+.item-head strong { flex: 1 1 200px; font-weight: 600; font-size: 15px; }
+.item-body { border-top: 1px solid var(--line); padding: 16px 14px 4px; }
+.box { background: #fff; border: 1.5px solid var(--line); border-radius: 18px; padding: 18px 16px 4px; }
+.thumb { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.thumb img { width: 72px; height: 72px; object-fit: cover; border-radius: 12px; background: var(--lilac); }
+.swatches { display: flex; gap: 8px; }
+.swatch { width: 34px; height: 34px; border-radius: 50%; border: 3px solid transparent; cursor: pointer; }
+.swatch.on { border-color: var(--ink); }
+.toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: var(--ink); color: var(--cream); padding: 12px 20px; border-radius: 999px; font-size: 14px; z-index: 50; }
+@media (max-width: 1000px) { .layout, .layout.no-preview { grid-template-columns: 1fr; } .side { display: flex; flex-wrap: wrap; gap: 4px; } .side button { width: auto; } .preview { display: none; } .pair { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<section id="login" class="login">
+  <form class="login-card" id="loginForm">
+    <h1 class="hand">tu panel</h1>
+    <p>Conecta tu repositorio de GitHub una sola vez. El token queda guardado solo en este navegador.</p>
+    <label class="field"><span>Usuario de GitHub</span><input id="owner" required autocomplete="username" placeholder="你的 GitHub 用户名"></label>
+    <label class="field"><span>Repositorio</span><input id="repo" required placeholder="tu-usuario.github.io"></label>
+    <label class="field"><span>Rama</span><input id="branch" value="main"></label>
+    <label class="field"><span>Token de GitHub</span><input id="token" type="password" required autocomplete="current-password"><small>Fine-grained token con permiso "Contents: Read and write" solo en este repo.</small></label>
+    <p class="error" id="loginError" role="alert"></p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px">
+      <button class="btn btn-ink" type="submit">Conectar</button>
+      <button class="btn btn-ghost" type="button" id="localBtn">Probar sin conectar</button>
+    </div>
+  </form>
+</section>
+
+<section id="appView" class="hidden">
+  <header class="top">
+    <span class="title hand">tu panel</span>
+    <span class="status" id="status"></span>
+    <button class="btn btn-ghost btn-sm" type="button" id="langBtn">Vista: EN</button>
+    <button class="btn btn-ghost btn-sm" type="button" id="previewBtn">Ocultar vista previa</button>
+    <a class="btn btn-ghost btn-sm" href="../" target="_blank" rel="noopener" style="text-decoration:none">Ver mi web ↗</a>
+    <button class="btn btn-ghost btn-sm" type="button" id="logoutBtn">Salir</button>
+    <button class="btn btn-orchid" type="button" id="publishBtn" disabled>Publicar</button>
+  </header>
+  <div class="layout" id="layout">
+    <nav class="side" id="side" aria-label="Secciones"></nav>
+    <div class="main" id="main"></div>
+    <div class="preview" id="preview"><iframe id="frame" title="Vista previa" src="../index.html"></iframe></div>
+  </div>
+</section>
+
+<script>
+(function () {
+  'use strict';
+  var COLORS = { lavender: '#C0C4F3', lilac: '#E4CFF2', pink: '#F3C9DF', orchid: '#C77DDB' };
+  var SECTIONS = [
+    { key: 'hero', label: 'Hero', hint: 'Lo primero que ve el recruiter.', type: 'object', fields: [
+      ['eyebrow', 'Saludo pequeño', 'i18n'], ['pill', 'Etiqueta', 'i18n'], ['title_a', 'Título, línea 1', 'i18n'], ['title_b', 'Título, línea 2 (en orquídea)', 'i18n'],
+      ['promise', 'Tu promesa', 'i18n-area'], ['sticker', 'Texto del óvalo (vacío = sin óvalo)', 'i18n'], ['photo', 'Foto dentro del marco', 'image'] ] },
+    { key: 'stats', label: 'Cifras', hint: 'Números grandes en tarjetas de color.', type: 'list', title: function (x) { return (x.value && (x.value.zh || x.value.en || x.value.ru)) || '0'; },
+      blank: { value: { zh: '', ru: '', en: '' }, label: { zh: '', ru: '', en: '' }, color: 'lavender' },
+      fields: [['value', 'Número', 'i18n'], ['label', 'Texto', 'i18n'], ['color', 'Color', 'color']] },
+    { key: 'about', label: 'Sobre mí', type: 'object', fields: [
+      ['eyebrow', 'Saludo pequeño', 'i18n'], ['title_a', 'Título', 'i18n'], ['title_b', 'Título (en orquídea)', 'i18n'], ['p1', 'Párrafo 1', 'i18n-area'], ['p2', 'Párrafo 2', 'i18n-area'],
+      ['pills', 'Píldoras', 'i18n-list'], ['photo', 'Foto redonda', 'image'] ] },
+    { key: 'method', label: 'How I work', hint: 'Textos del pool BPMN. Los pasos se editan en "Pasos del método".', type: 'object', fields: [
+      ['eyebrow', 'Saludo pequeño', 'i18n'], ['title_a', 'Título', 'i18n'], ['title_b', 'Título (en orquídea)', 'i18n'], ['intro', 'Introducción', 'i18n-area'],
+      ['lane1', 'Carril 1', 'i18n'], ['lane2', 'Carril 2', 'i18n'], ['marker', 'Etiqueta sobre el carril 2', 'i18n'], ['image', 'Ilustración', 'image'] ] },
+    { key: 'steps', label: 'Pasos del método', type: 'list', title: function (x) { return (x.title && (x.title.zh || x.title.en || x.title.ru)) || 'Paso'; },
+      blank: { lane: '1', title: { zh: '', ru: '', en: '' }, text: { zh: '', ru: '', en: '' }, tools: { zh: '', ru: '', en: '' } },
+      fields: [['title', 'Título', 'i18n'], ['text', 'Texto', 'i18n-area'], ['tools', 'Herramientas (separadas por coma)', 'i18n'], ['lane', 'Carril', 'lane']] },
+    { key: 'cases', label: 'Casos', hint: 'Agrega, edita, oculta o reordena tus casos.', type: 'list', title: function (x) { return (x.title && (x.title.zh || x.title.en || x.title.ru)) || 'Nuevo caso'; },
+      blank: { label: { zh: '', ru: '', en: '' }, title: { zh: '', ru: '', en: '' }, summary: { zh: '', ru: '', en: '' }, metrics: { zh: '', ru: '', en: '' }, image: '', color: 'lavender', link: '', button: { zh: '', ru: '', en: '' } },
+      fields: [['label', 'Etiqueta (ej. PROCESS INTELLIGENCE)', 'i18n'], ['title', 'Título de la tarjeta', 'i18n'], ['summary', 'Resumen', 'i18n-area'], ['metrics', 'Métricas (separadas por coma)', 'i18n'],
+        ['image', 'Imagen', 'image'], ['color', 'Color de fondo de la imagen', 'color'], ['link', 'Link (caso completo, demo o PDF)', 'text'], ['button', 'Texto del botón', 'i18n']] },
+    { key: 'brands', label: 'Empresas', hint: 'Sube cada logo en PNG o SVG con fondo transparente. Se muestran en gris.', type: 'list', title: function (x) { return (x.name && (x.name.zh || x.name.en || x.name.ru)) || 'Empresa'; },
+      blank: { name: { zh: '', ru: '', en: '' }, via: '', logo: '' }, fields: [['name', 'Nombre', 'i18n'], ['via', 'Nota (ej. via RPROTON)', 'text'], ['logo', 'Logo', 'image']] },
+    { key: 'certs', label: 'Certificaciones', type: 'list', title: function (x) { return (x.name && (x.name.zh || x.name.en || x.name.ru)) || 'Certificación'; },
+      blank: { name: { zh: '', ru: '', en: '' }, image: '', link: '' }, fields: [['name', 'Nombre', 'i18n'], ['image', 'Badge', 'image'], ['link', 'Link de verificación', 'text']] },
+    { key: 'lab', label: 'Lab', type: 'list', title: function (x) { return (x.title && (x.title.zh || x.title.en || x.title.ru)) || 'Proyecto'; },
+      blank: { title: { zh: '', ru: '', en: '' }, text: { zh: '', ru: '', en: '' }, link: '', color: 'lavender' }, fields: [['title', 'Nombre', 'i18n'], ['text', 'Descripción corta', 'i18n'], ['link', 'Link', 'text'], ['color', 'Color', 'color']] },
+    { key: 'testimonials', label: 'Testimonios', type: 'list', title: function (x) { return (x.name && (x.name.zh || x.name.en || x.name.ru)) || 'Testimonio'; },
+      blank: { quote: { zh: '', ru: '', en: '' }, name: { zh: '', ru: '', en: '' }, role: { zh: '', ru: '', en: '' }, photo: '' }, fields: [['quote', 'Testimonio', 'i18n-area'], ['name', 'Nombre completo', 'i18n'], ['role', 'Cargo', 'i18n'], ['photo', 'Foto', 'image']] },
+    { key: 'contact', label: 'Contacto', type: 'object', fields: [['title_a', 'Título', 'i18n'], ['title_b', 'Título (en orquídea)', 'i18n'], ['facts', 'Datos prácticos', 'i18n-area']] },
+    { key: 'settings', label: 'Redes y CV', type: 'object', fields: [['name', 'Tu nombre', 'i18n'], ['email', 'Email', 'text'], ['github', 'GitHub (link)', 'text'], ['linkedin', 'LinkedIn (link)', 'text'], ['tiktok', 'TikTok (link)', 'text'],
+      ['resume_zh', 'CV en chino (PDF)', 'file'], ['resume_ru', 'CV en ruso (PDF)', 'file'], ['resume_en', 'CV en inglés (PDF)', 'file']] }
+  ];
+
+  var cfg = load('mc-admin') || {};
+  var mode = null, content = null, sha = null, dirty = false, current = 'hero', open = {}, previewLang = 'zh', blobs = {};
+  var LANGS = [['zh', '中'], ['ru', 'RU'], ['en', 'EN']];
+  var $ = function (id) { return document.getElementById(id); };
+
+  function load(k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } }
+  function save(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function toast(msg) { var d = document.createElement('div'); d.className = 'toast'; d.setAttribute('role', 'status'); d.textContent = msg; document.body.appendChild(d); setTimeout(function () { d.remove(); }, 3200); }
+  function b64encode(str) { var bytes = new TextEncoder().encode(str), bin = ''; bytes.forEach(function (b) { bin += String.fromCharCode(b); }); return btoa(bin); }
+  function b64decode(b64) { var bin = atob(b64.replace(/\n/g, '')), bytes = new Uint8Array(bin.length); for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i); return new TextDecoder().decode(bytes); }
+  function api(path, opts) {
+    opts = opts || {};
+    return fetch('https://api.github.com/repos/' + encodeURIComponent(cfg.owner) + '/' + encodeURIComponent(cfg.repo) + path, {
+      method: opts.method || 'GET',
+      headers: { Authorization: 'Bearer ' + cfg.token, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
+      body: opts.body ? JSON.stringify(opts.body) : undefined
+    }).then(function (r) { return r.json().then(function (j) { if (!r.ok) throw new Error(j.message || ('Error ' + r.status)); return j; }); });
+  }
+
+  // ---------- connect ----------
+  $('owner').value = cfg.owner || ''; $('repo').value = cfg.repo || ''; $('branch').value = cfg.branch || 'main'; $('token').value = cfg.token || '';
+  $('loginForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    cfg = { owner: $('owner').value.trim(), repo: $('repo').value.trim(), branch: $('branch').value.trim() || 'main', token: $('token').value.trim() };
+    $('loginError').textContent = '';
+    if (!cfg.owner || !cfg.repo || !cfg.token) { $('loginError').textContent = 'Completa usuario, repositorio y token.'; return; }
+    api('/contents/content.json?ref=' + encodeURIComponent(cfg.branch)).then(function (f) {
+      save('mc-admin', cfg); mode = 'github'; sha = f.sha; start(JSON.parse(b64decode(f.content)));
+    }).catch(function (err) { $('loginError').textContent = 'No pude conectar: ' + err.message; });
+  });
+  $('localBtn').addEventListener('click', function () {
+    fetch('../content.json', { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (c) { mode = 'local'; start(load('mc-local-draft') || c); })
+      .catch(function () { $('loginError').textContent = 'No encontré content.json.'; });
+  });
+  if (cfg.owner && cfg.token) $('loginForm').requestSubmit();
+
+  function start(c) {
+    content = c;
+    $('login').classList.add('hidden'); $('appView').classList.remove('hidden');
+    $('publishBtn').textContent = mode === 'github' ? 'Publicar' : 'Descargar content.json';
+    setStatus(mode === 'github' ? 'Conectado a ' + cfg.owner + '/' + cfg.repo : 'Modo prueba: los cambios no se publican');
+    renderSide(); renderMain(); sendPreview();
+  }
+  function setStatus(s) { $('status').textContent = s; }
+  function markDirty() { dirty = true; $('publishBtn').disabled = false; setStatus('Cambios sin publicar'); if (mode === 'local') save('mc-local-draft', content); schedulePreview(); }
+
+  // ---------- preview ----------
+  var timer = null;
+  function schedulePreview() { clearTimeout(timer); timer = setTimeout(sendPreview, 250); }
+  function withBlobs(obj) { var s = JSON.stringify(obj); Object.keys(blobs).forEach(function (p) { s = s.split(JSON.stringify(p).slice(1, -1)).join(blobs[p]); }); return JSON.parse(s); }
+  function sendPreview() { if (!content) return; var w = $('frame').contentWindow; if (w) w.postMessage({ type: 'mc-preview', content: withBlobs(content), lang: previewLang }, location.origin); }
+  $('frame').addEventListener('load', sendPreview);
+  $('langBtn').addEventListener('click', function () { previewLang = previewLang === 'zh' ? 'ru' : previewLang === 'ru' ? 'en' : 'zh'; this.textContent = 'Vista: ' + ({ zh: '中文', ru: 'РУС', en: 'EN' })[previewLang]; sendPreview(); });
+  $('previewBtn').addEventListener('click', function () { var off = $('layout').classList.toggle('no-preview'); $('preview').classList.toggle('hidden', off); this.textContent = off ? 'Mostrar vista previa' : 'Ocultar vista previa'; });
+  $('logoutBtn').addEventListener('click', function () { if (dirty && !confirm('Tienes cambios sin publicar. ¿Salir igual?')) return; localStorage.removeItem('mc-admin'); location.reload(); });
+  window.addEventListener('beforeunload', function (e) { if (dirty) { e.preventDefault(); e.returnValue = ''; } });
+
+  // ---------- publish ----------
+  $('publishBtn').addEventListener('click', function () {
+    var btn = this;
+    if (mode === 'local') {
+      var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([JSON.stringify(content, null, 2)], { type: 'application/json' })); a.download = 'content.json'; a.click();
+      toast('Descargado. En modo prueba no se publica nada.'); return;
+    }
+    btn.disabled = true; setStatus('Publicando…');
+    api('/contents/content.json', { method: 'PUT', body: { message: 'Update portfolio content from admin panel', content: b64encode(JSON.stringify(content, null, 2) + '\n'), sha: sha, branch: cfg.branch } })
+      .then(function (r) { sha = r.content.sha; dirty = false; setStatus('Publicado. Tu web se actualiza en 1 o 2 minutos.'); toast('¡Publicado!'); })
+      .catch(function (err) { btn.disabled = false; setStatus('No se pudo publicar'); alert('No se pudo publicar: ' + err.message + '\n\nSi editaste desde otro navegador, recarga el panel.'); });
+  });
+
+  // ---------- uploads ----------
+  function readFile(file) { return new Promise(function (ok, ko) { var r = new FileReader(); r.onload = function () { ok(r.result); }; r.onerror = ko; r.readAsDataURL(file); }); }
+  function upload(file) {
+    return readFile(file).then(function (dataUrl) {
+      if (mode === 'local') return dataUrl;
+      var clean = file.name.toLowerCase().replace(/[^a-z0-9.\-]+/g, '-');
+      var path = 'assets/uploads/' + Date.now() + '-' + clean;
+      setStatus('Subiendo ' + file.name + '…');
+      return api('/contents/' + path, { method: 'PUT', body: { message: 'Upload ' + clean, content: dataUrl.split(',')[1], branch: cfg.branch } })
+        .then(function () { blobs[path] = dataUrl; setStatus('Imagen subida. Recuerda publicar.'); return path; });
+    });
+  }
+
+  // ---------- render ----------
+  function renderSide() {
+    $('side').innerHTML = SECTIONS.map(function (s) { return '<button type="button" data-k="' + s.key + '" class="' + (s.key === current ? 'active' : '') + '">' + esc(s.label) + '</button>'; }).join('');
+    Array.prototype.forEach.call($('side').querySelectorAll('button'), function (b) { b.addEventListener('click', function () { current = b.dataset.k; renderSide(); renderMain(); }); });
+  }
+  function sectionDef(k) { return SECTIONS.filter(function (s) { return s.key === k; })[0]; }
+
+  function renderMain() {
+    var def = sectionDef(current), main = $('main');
+    main.innerHTML = '<h2>' + esc(def.label) + '</h2><p class="hint">' + esc(def.hint || '') + '</p>';
+    if (def.type === 'object') {
+      content[def.key] = content[def.key] || {};
+      var box = document.createElement('div'); box.className = 'box';
+      def.fields.forEach(function (f) { box.appendChild(fieldEl(content[def.key], f)); });
+      main.appendChild(box);
+      return;
+    }
+    var arr = content[def.key] = content[def.key] || [];
+    arr.forEach(function (item, i) {
+      var id = def.key + i, el = document.createElement('div');
+      el.className = 'item' + (item.hidden ? ' off' : '');
+      el.innerHTML = '<div class="item-head"><strong>' + esc(def.title(item) || '(sin título)') + (item.hidden ? ' · oculto' : '') + '</strong>' +
+        '<button class="btn btn-ghost btn-sm" data-a="up" aria-label="Subir"' + (i === 0 ? ' disabled' : '') + '>↑</button>' +
+        '<button class="btn btn-ghost btn-sm" data-a="down" aria-label="Bajar"' + (i === arr.length - 1 ? ' disabled' : '') + '>↓</button>' +
+        '<button class="btn btn-ghost btn-sm" data-a="hide">' + (item.hidden ? 'Mostrar' : 'Ocultar') + '</button>' +
+        '<button class="btn btn-sm" data-a="edit">' + (open[id] ? 'Cerrar' : 'Editar') + '</button>' +
+        '<button class="btn btn-danger btn-sm" data-a="del">Borrar</button></div>';
+      if (open[id]) { var body = document.createElement('div'); body.className = 'item-body'; def.fields.forEach(function (f) { body.appendChild(fieldEl(item, f, function () { el.querySelector('strong').textContent = def.title(item) || '(sin título)'; })); }); el.appendChild(body); }
+      el.querySelector('.item-head').addEventListener('click', function (e) {
+        var a = e.target.dataset && e.target.dataset.a; if (!a) return;
+        if (a === 'edit') open[id] = !open[id];
+        if (a === 'hide') { item.hidden = !item.hidden; markDirty(); }
+        if (a === 'del') { if (!confirm('¿Borrar "' + (def.title(item) || 'este elemento') + '"?')) return; arr.splice(i, 1); open = {}; markDirty(); }
+        if (a === 'up' && i > 0) { arr.splice(i - 1, 0, arr.splice(i, 1)[0]); open = {}; markDirty(); }
+        if (a === 'down' && i < arr.length - 1) { arr.splice(i + 1, 0, arr.splice(i, 1)[0]); open = {}; markDirty(); }
+        renderMain();
+      });
+      main.appendChild(el);
+    });
+    var add = document.createElement('button'); add.className = 'btn btn-ink'; add.type = 'button'; add.textContent = '+ Agregar ' + def.label.toLowerCase();
+    add.addEventListener('click', function () { arr.push(JSON.parse(JSON.stringify(def.blank))); open = {}; open[def.key + (arr.length - 1)] = true; markDirty(); renderMain(); });
+    main.appendChild(add);
+  }
+
+  function fieldEl(obj, f, onChange) {
+    var key = f[0], label = f[1], type = f[2], wrap = document.createElement('div'), uid = 'f' + Math.random().toString(36).slice(2);
+    var changed = function () { markDirty(); if (onChange) onChange(); };
+    wrap.className = 'field';
+    if (type === 'text') {
+      wrap.innerHTML = '<label for="' + uid + '"><span>' + esc(label) + '</span></label><input id="' + uid + '" value="' + esc(obj[key]) + '">';
+      wrap.querySelector('input').addEventListener('input', function (e) { obj[key] = e.target.value; changed(); });
+    } else if (type === 'i18n' || type === 'i18n-area') {
+      var v = obj[key] = (obj[key] && typeof obj[key] === 'object') ? obj[key] : { zh: obj[key] || '', ru: '', en: '' };
+      var tag = type === 'i18n' ? 'input' : 'textarea';
+      wrap.innerHTML = '<span>' + esc(label) + '</span><div class="pair">' + LANGS.map(function (l) {
+        var inner = tag === 'input' ? '<input id="' + uid + l[0] + '" value="' + esc(v[l[0]]) + '">' : '<textarea id="' + uid + l[0] + '">' + esc(v[l[0]]) + '</textarea>';
+        return '<label for="' + uid + l[0] + '"><em>' + l[1] + '</em>' + inner + '</label>';
+      }).join('') + '</div>';
+      LANGS.forEach(function (l) { wrap.querySelector('#' + uid + l[0]).addEventListener('input', function (e) { v[l[0]] = e.target.value; changed(); }); });
+    } else if (type === 'i18n-list') {
+      var arr = obj[key] = obj[key] || [];
+      wrap.innerHTML = '<span>' + esc(label) + '</span>';
+      arr.forEach(function (p, i) {
+        var row = document.createElement('div'); row.className = 'pair'; row.style.marginBottom = '8px';
+        row.innerHTML = LANGS.map(function (l) { return '<input aria-label="' + l[1] + '" value="' + esc(p[l[0]] || '') + '" style="flex:1">'; }).join('') + '<button class="btn btn-danger btn-sm" type="button" aria-label="Quitar">×</button>';
+        var ins = row.querySelectorAll('input');
+        LANGS.forEach(function (l, j) { ins[j].addEventListener('input', function (e) { p[l[0]] = e.target.value; changed(); }); });
+        row.querySelector('button').addEventListener('click', function () { arr.splice(i, 1); changed(); renderMain(); });
+        wrap.appendChild(row);
+      });
+      var add = document.createElement('button'); add.type = 'button'; add.className = 'btn btn-sm'; add.textContent = '+ Agregar píldora';
+      add.addEventListener('click', function () { arr.push({ zh: '', ru: '', en: '' }); changed(); renderMain(); });
+      wrap.appendChild(add);
+    } else if (type === 'color') {
+      wrap.innerHTML = '<span>' + esc(label) + '</span><div class="swatches" role="radiogroup">' + Object.keys(COLORS).map(function (c) {
+        return '<button type="button" role="radio" aria-checked="' + (obj[key] === c) + '" aria-label="' + c + '" class="swatch' + (obj[key] === c ? ' on' : '') + '" data-c="' + c + '" style="background:' + COLORS[c] + '"></button>';
+      }).join('') + '</div>';
+      wrap.querySelectorAll('.swatch').forEach(function (b) { b.addEventListener('click', function () { obj[key] = b.dataset.c; changed(); wrap.querySelectorAll('.swatch').forEach(function (x) { x.classList.toggle('on', x === b); x.setAttribute('aria-checked', x === b); }); }); });
+    } else if (type === 'lane') {
+      wrap.innerHTML = '<label for="' + uid + '"><span>' + esc(label) + '</span></label><select id="' + uid + '"><option value="1">1 · Quitar trabajo</option><option value="2">2 · Automatizar</option></select>';
+      var sel = wrap.querySelector('select'); sel.value = String(obj[key] || '1');
+      sel.addEventListener('change', function (e) { obj[key] = e.target.value; changed(); });
+    } else if (type === 'image' || type === 'file') {
+      var src = obj[key] ? (blobs[obj[key]] || (obj[key].indexOf('data:') === 0 ? obj[key] : '../' + obj[key])) : '';
+      wrap.innerHTML = '<label for="' + uid + '"><span>' + esc(label) + '</span></label><div class="thumb">' +
+        (type === 'image' ? (src ? '<img src="' + esc(src) + '" alt="">' : '<img alt="">') : '<span style="font-size:13px">' + (obj[key] ? esc(obj[key].slice(0, 60)) : 'Sin archivo') + '</span>') +
+        '<input id="' + uid + '" type="file" accept="' + (type === 'image' ? 'image/*' : 'application/pdf') + '">' +
+        (obj[key] ? '<button class="btn btn-danger btn-sm" type="button">Quitar</button>' : '') + '</div>';
+      wrap.querySelector('input').addEventListener('change', function (e) {
+        var file = e.target.files[0]; if (!file) return;
+        if (file.size > 4 * 1024 * 1024) { alert('El archivo pesa más de 4 MB. Usa uno más liviano.'); return; }
+        upload(file).then(function (path) { obj[key] = path; changed(); renderMain(); }).catch(function (err) { alert('No se pudo subir: ' + err.message); });
+      });
+      var rm = wrap.querySelector('.btn-danger'); if (rm) rm.addEventListener('click', function () { obj[key] = ''; changed(); renderMain(); });
+    }
+    return wrap;
+  }
+})();
+</script>
+</body>
+</html>

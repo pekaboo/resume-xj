@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#C77DDB"/>
+
+  <!-- 文件夹挂板 -->
+  <g stroke="#2B2A57" stroke-width="8" stroke-linejoin="round">
+    <rect x="176" y="118" width="264" height="330" rx="20" fill="#FDF8EC"/>
+    <rect x="278" y="90" width="60" height="44" rx="12" fill="#6A55C8"/>
+  </g>
+
+  <!-- 待办清单 -->
+  <g stroke="#2B2A57" stroke-width="5" stroke-linejoin="round">
+    <rect x="212" y="166" width="26" height="26" rx="7" fill="#6A55C8"/>
+    <path d="M219 179 l6 6 11 -13" fill="none" stroke="#FDF8EC" stroke-width="5" stroke-linecap="round"/>
+    <rect x="212" y="228" width="26" height="26" rx="7" fill="#6A55C8"/>
+    <path d="M219 241 l6 6 11 -13" fill="none" stroke="#FDF8EC" stroke-width="5" stroke-linecap="round"/>
+    <rect x="212" y="290" width="26" height="26" rx="7" fill="#6A55C8"/>
+    <path d="M219 303 l6 6 11 -13" fill="none" stroke="#FDF8EC" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g stroke="#C0C4F3" stroke-width="9" stroke-linecap="round">
+    <line x1="258" y1="179" x2="400" y2="179"/>
+    <line x1="258" y1="241" x2="372" y2="241"/>
+    <line x1="258" y1="303" x2="392" y2="303"/>
+    <line x1="258" y1="366" x2="348" y2="366"/>
+  </g>
+
+  <!-- 飞机 -->
+  <path d="M548 172 q-88 6 -150 58" fill="none" stroke="#FDF8EC" stroke-width="5" stroke-dasharray="1 13" stroke-linecap="round"/>
+  <g transform="translate(596 128) rotate(18)">
+    <path d="M-34 8 q8 -16 30 -16 q18 0 22 10 l24 3 q7 2 5 8 q-2 6 -12 6 l-20 2 q-7 10 -21 10 l3 14 -8 2 -7 -16 q-14 0 -19 -22z" fill="#FDF8EC" stroke="#2B2A57" stroke-width="5" stroke-linejoin="round"/>
+    <circle cx="12" cy="4" r="4" fill="#6A55C8"/>
+  </g>
+
+  <!-- 日历卡 -->
+  <g stroke="#2B2A57" stroke-width="7">
+    <rect x="516" y="250" width="196" height="168" rx="16" fill="#FDF8EC"/>
+    <path d="M516 282 h196" stroke-width="6"/>
+    <rect x="516" y="250" width="196" height="32" rx="16" fill="#6A55C8"/>
+  </g>
+  <line x1="546" y1="240" x2="546" y2="262" stroke="#2B2A57" stroke-width="7" stroke-linecap="round"/>
+  <line x1="682" y1="240" x2="682" y2="262" stroke="#2B2A57" stroke-width="7" stroke-linecap="round"/>
+  <g fill="#C0C4F3">
+    <rect x="540" y="298" width="26" height="24" rx="5"/>
+    <rect x="580" y="298" width="26" height="24" rx="5"/>
+    <rect x="620" y="298" width="26" height="24" rx="5"/>
+    <rect x="660" y="298" width="26" height="24" rx="5"/>
+    <rect x="540" y="340" width="26" height="24" rx="5"/>
+    <rect x="620" y="340" width="26" height="24" rx="5"/>
+    <rect x="660" y="340" width="26" height="24" rx="5"/>
+    <rect x="540" y="382" width="26" height="24" rx="5"/>
+    <rect x="580" y="382" width="26" height="24" rx="5"/>
+    <rect x="660" y="382" width="26" height="24" rx="5"/>
+  </g>
+  <circle cx="593" cy="352" r="16" fill="#E85D5D"/>
+
+  <path d="M106 90 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5z" fill="#FDF8EC"/>
+  <circle cx="470" cy="460" r="8" fill="#FDF8EC"/>
+  <circle cx="96" cy="420" r="7" fill="#FDF8EC"/>
+</svg>

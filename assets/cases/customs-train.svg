@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#E4CFF2"/>
+
+  <!-- 铁轨 -->
+  <line x1="40" y1="416" x2="760" y2="416" stroke="#2B2A57" stroke-width="9" stroke-linecap="round"/>
+  <g stroke="#2B2A57" stroke-width="5" stroke-linecap="round">
+    <line x1="80" y1="400" x2="80" y2="432"/><line x1="150" y1="400" x2="150" y2="432"/>
+    <line x1="220" y1="400" x2="220" y2="432"/><line x1="290" y1="400" x2="290" y2="432"/>
+    <line x1="360" y1="400" x2="360" y2="432"/><line x1="430" y1="400" x2="430" y2="432"/>
+    <line x1="500" y1="400" x2="500" y2="432"/><line x1="570" y1="400" x2="570" y2="432"/>
+    <line x1="640" y1="400" x2="640" y2="432"/><line x1="710" y1="400" x2="710" y2="432"/>
+  </g>
+
+  <!-- 机车 -->
+  <g stroke="#2B2A57" stroke-width="8" stroke-linejoin="round">
+    <rect x="70" y="288" width="180" height="112" rx="22" fill="#6A55C8"/>
+    <rect x="102" y="312" width="52" height="40" rx="9" fill="#FDF8EC"/>
+    <path d="M70 400 l-24 0 24 -28z" fill="#F3C9DF"/>
+  </g>
+  <circle cx="112" cy="404" r="17" fill="#2B2A57"/><circle cx="112" cy="404" r="6" fill="#FDF8EC"/>
+  <circle cx="176" cy="404" r="17" fill="#2B2A57"/><circle cx="176" cy="404" r="6" fill="#FDF8EC"/>
+  <circle cx="234" cy="404" r="17" fill="#2B2A57"/><circle cx="234" cy="404" r="6" fill="#FDF8EC"/>
+
+  <!-- 车厢 1 -->
+  <g stroke="#2B2A57" stroke-width="7" stroke-linejoin="round">
+    <rect x="288" y="302" width="170" height="98" rx="14" fill="#F3C9DF"/>
+    <line x1="316" y1="316" x2="316" y2="386" stroke-width="4"/>
+    <line x1="430" y1="316" x2="430" y2="386" stroke-width="4"/>
+  </g>
+  <circle cx="326" cy="404" r="15" fill="#2B2A57"/><circle cx="422" cy="404" r="15" fill="#2B2A57"/>
+
+  <!-- 车厢 2 -->
+  <g stroke="#2B2A57" stroke-width="7" stroke-linejoin="round">
+    <rect x="496" y="302" width="170" height="98" rx="14" fill="#C0C4F3"/>
+    <line x1="524" y1="316" x2="524" y2="386" stroke-width="4"/>
+    <line x1="638" y1="316" x2="638" y2="386" stroke-width="4"/>
+  </g>
+  <circle cx="534" cy="404" r="15" fill="#2B2A57"/><circle cx="630" cy="404" r="15" fill="#2B2A57"/>
+
+  <!-- 车钩 -->
+  <line x1="250" y1="366" x2="288" y2="366" stroke="#2B2A57" stroke-width="7"/>
+  <line x1="458" y1="366" x2="496" y2="366" stroke="#2B2A57" stroke-width="7"/>
+
+  <!-- 速度线 -->
+  <g stroke="#2B2A57" stroke-width="6" stroke-linecap="round" opacity=".55">
+    <line x1="46" y1="316" x2="14" y2="316"/>
+    <line x1="58" y1="346" x2="34" y2="346"/>
+    <line x1="46" y1="286" x2="22" y2="286"/>
+  </g>
+
+  <!-- 通关印章 -->
+  <g transform="rotate(-12 636 150)">
+    <circle cx="636" cy="150" r="72" fill="none" stroke="#E85D5D" stroke-width="10" stroke-dasharray="0.1 20" stroke-linecap="round"/>
+    <circle cx="636" cy="150" r="56" fill="none" stroke="#E85D5D" stroke-width="6"/>
+    <path d="M636 106 l5 11 11 4 -11 4 -5 11 -5 -11 -11 -4 11 -4z" fill="#E85D5D"/>
+    <path d="M614 166 l15 15 29 -33" fill="none" stroke="#E85D5D" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <circle cx="120" cy="120" r="8" fill="#FDF8EC"/>
+  <path d="M90 180 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5z" fill="#FDF8EC"/>
+</svg>

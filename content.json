@@ -1,0 +1,571 @@
+{
+  "settings": {
+    "name": {
+      "zh": "徐小娟",
+      "ru": "Сюй Сяоцзюань",
+      "en": "Xu Xiaojuan"
+    },
+    "email": "me.xiaojuan@qq.com",
+    "github": "",
+    "linkedin": "",
+    "tiktok": "",
+    "resume_zh": "",
+    "resume_ru": "",
+    "resume_en": ""
+  },
+  "hero": {
+    "eyebrow": {
+      "zh": "你好，我是",
+      "ru": "Привет, я",
+      "en": "Hi, I'm"
+    },
+    "pill": {
+      "zh": "俄罗斯外贸 · 国际物流 · 俄语人才",
+      "ru": "Торговля с Россией · Международная логистика · Русский язык",
+      "en": "Russia trade · International logistics · Russian speaker"
+    },
+    "title_a": {
+      "zh": "中俄国际物流",
+      "ru": "Логистика Китай–Россия",
+      "en": "China–Russia logistics"
+    },
+    "title_b": {
+      "zh": "全链路运营",
+      "ru": "вся логистическая цепочка",
+      "en": "end-to-end operations"
+    },
+    "promise": {
+      "zh": "六年国际物流行业经验，覆盖运营、客服、财务、关务等职位，全面掌握中俄国际物流全链路操作规则。俄语专业八级，可流利沟通，具备团队管理与海外驻外经验。",
+      "ru": "Шесть лет в международной логистике: операционное управление, клиентский сервис, финансы и таможенное оформление — полное владение всеми звеньями логистической цепочки Китай–Россия. Русский язык уровня TEM-8, свободное деловое общение, опыт управления командой и работы за рубежом.",
+      "en": "Six years in international logistics across operations, customer service, finance and customs — full command of every link in the China–Russia logistics chain. TEM-8 certified Russian, fluent business communication, team management and overseas experience."
+    },
+    "sticker": {
+      "zh": "求职中 · 俄罗斯外贸 / 国际物流",
+      "ru": "Ищу работу · Россия / логистика",
+      "en": "Open to work · Russia trade / logistics"
+    },
+    "photo": "assets/uploads/avatar-real.png"
+  },
+  "stats": [
+    {
+      "value": {
+        "zh": "6年",
+        "ru": "6 лет",
+        "en": "6 yrs"
+      },
+      "label": {
+        "zh": "国际物流行业经验",
+        "ru": "в международной логистике",
+        "en": "in international logistics"
+      },
+      "color": "lavender"
+    },
+    {
+      "value": {
+        "zh": "4大",
+        "ru": "4 сферы",
+        "en": "4 areas"
+      },
+      "label": {
+        "zh": "职能板块 · 运营 / 客服 / 财务 / 关务",
+        "ru": "операции · сервис · финансы · таможня",
+        "en": "operations · service · finance · customs"
+      },
+      "color": "lilac"
+    },
+    {
+      "value": {
+        "zh": "专八",
+        "ru": "TEM-8",
+        "en": "TEM-8"
+      },
+      "label": {
+        "zh": "俄语专业八级 · 流利沟通",
+        "ru": "русский — свободное владение",
+        "en": "Russian — full professional proficiency"
+      },
+      "color": "pink"
+    }
+  ],
+  "about": {
+    "eyebrow": {
+      "zh": "关于我",
+      "ru": "О себе",
+      "en": "About me"
+    },
+    "title_a": {
+      "zh": "六年中俄物流",
+      "ru": "Шесть лет логистики",
+      "en": "Six years of China–Russia"
+    },
+    "title_b": {
+      "zh": "全链路实战经验",
+      "ru": "Китай — Россия",
+      "en": "logistics experience"
+    },
+    "p1": {
+      "zh": "具备六年国际物流行业经验，涵盖运营、客服、财务和关务等职位，全面掌握中俄国际物流全链路操作规则。拥有团队管理经验，能够流利使用俄语，有效沟通协调各部门合作，确保工作流畅。",
+      "ru": "Шесть лет в международной логистике: операции, клиентский сервис, финансы и таможня — полное понимание правил работы всех звеньев логистики Китай–Россия. Есть опыт управления командой; свободно владею русским языком и эффективно координирую работу подразделений.",
+      "en": "Six years in international logistics covering operations, customer service, finance and customs — a complete grasp of China–Russia end-to-end logistics rules. An experienced team manager, fluent in Russian, coordinating departments to keep work flowing."
+    },
+    "p2": {
+      "zh": "了解海外公司财务管理，驻外期间负责管理海外公司的财务事务，熟悉俄罗斯国家财税法规。有海外仓库管理经验和对俄罗斯文化的了解，管理海外仓运营，促进与当地员工和合作伙伴的有效沟通和协作。",
+      "ru": "Знакома с финансами зарубежных компаний: во время работы за рубежом управляла финансами местного юрлица, знаю российское налоговое законодательство. Есть опыт управления зарубежным складом и знание российской культуры — выстраивала эффективное сотрудничество с местными сотрудниками и партнёрами.",
+      "en": "Hands-on with overseas company finance: while based abroad I ran the local entity's finances and know Russian tax law. Overseas warehouse management experience and cultural fluency — I ran warehouse operations and built effective collaboration with local staff and partners."
+    },
+    "pills": [
+      {
+        "zh": "俄语口译硕士 · 内蒙古师范大学",
+        "ru": "Магистр устного перевода · Педуниверситет Внутренней Монголии",
+        "en": "MA in Russian Interpretation · Inner Mongolia Normal University"
+      },
+      {
+        "zh": "俄语专业八级",
+        "ru": "Русский язык — TEM-8",
+        "en": "Russian TEM-8"
+      },
+      {
+        "zh": "英语 CET-4 · 普通话二级甲等",
+        "ru": "Английский CET-4 · путунхуа 2-й уровень (A)",
+        "en": "English CET-4 · Mandarin Level 2-A"
+      }
+    ],
+    "photo": "assets/uploads/sticker-juan.svg"
+  },
+  "method": {
+    "eyebrow": {
+      "zh": "全链路能力",
+      "ru": "Компетенции",
+      "en": "End-to-end skills"
+    },
+    "title_a": {
+      "zh": "国内端运营",
+      "ru": "Операции в Китае",
+      "en": "Operations at home"
+    },
+    "title_b": {
+      "zh": "海外端管理",
+      "ru": "управление за рубежом",
+      "en": "management abroad"
+    },
+    "intro": {
+      "zh": "六年经验覆盖中俄物流的每一个环节：从国内的订单运营、关务清关、财务结算，到海外的仓库运营与团队管理。",
+      "ru": "Шесть лет опыта во всех звеньях логистики Китай–Россия: от внутренних операций, таможенного оформления и расчётов — до управления зарубежным складом и командой.",
+      "en": "Six years covering every link of China–Russia logistics: from domestic order operations, customs clearance and settlement, to overseas warehouse operations and team management."
+    },
+    "lane1": {
+      "zh": "国内端",
+      "ru": "В Китае",
+      "en": "Domestic side"
+    },
+    "lane2": {
+      "zh": "海外端",
+      "ru": "За рубежом",
+      "en": "Overseas side"
+    },
+    "marker": {
+      "zh": "驻外从这里开始",
+      "ru": "начало работы за рубежом",
+      "en": "overseas posting starts here"
+    },
+    "image": "assets/method-route.svg"
+  },
+  "steps": [
+    {
+      "lane": "1",
+      "title": {
+        "zh": "订单运营",
+        "ru": "Операции по заказам",
+        "en": "Order operations"
+      },
+      "text": {
+        "zh": "管理客户服务、账单结算与订单运营团队，解决订单履约问题，搭建渠道线路时效监控和数据分析报表。",
+        "ru": "Управление командами клиентского сервиса, расчётов и обработки заказов; решение проблем исполнения; построение мониторинга сроков доставки и аналитических отчётов.",
+        "en": "Managing customer service, billing and order operations teams; solving fulfilment issues; building lane transit-time monitoring and analytics reports."
+      },
+      "tools": {
+        "zh": "SOP, KPI, 数据分析",
+        "ru": "SOP, KPI, аналитика",
+        "en": "SOP, KPI, Analytics"
+      }
+    },
+    {
+      "lane": "1",
+      "title": {
+        "zh": "关务清关",
+        "ru": "Таможенное оформление",
+        "en": "Customs clearance"
+      },
+      "text": {
+        "zh": "负责中俄班列和卡航的通关与到货安排，准备清关单证，处理转关、查验等异常事件。",
+        "ru": "Оформление China–Europe rail и автоперевозок Китай–Россия, подготовка таможенных документов, решение вопросов транзита и досмотра.",
+        "en": "Clearance and arrival arrangements for China–Russia rail and truck lines, customs documentation, handling transit and inspection exceptions."
+      },
+      "tools": {
+        "zh": "清关单证, 关税系统, 报关行对接",
+        "ru": "Документы, Тарифы, Брокеры",
+        "en": "Customs docs, Tariffs, Brokers"
+      }
+    },
+    {
+      "lane": "1",
+      "title": {
+        "zh": "财务结算",
+        "ru": "Финансы и расчёты",
+        "en": "Finance & settlement"
+      },
+      "text": {
+        "zh": "梳理结算流程 SOP，优化结算系统；驻外期间管理海外公司财务，熟悉俄罗斯国家财税法规。",
+        "ru": "Оптимизация процессов и систем расчётов; управление финансами зарубежной компании; знание российского налогового законодательства.",
+        "en": "Streamlining settlement SOPs and systems; managing overseas company finances while posted abroad; familiar with Russian tax law."
+      },
+      "tools": {
+        "zh": "结算系统, 俄罗斯财税法规",
+        "ru": "Расчёты, Налоги РФ",
+        "en": "Settlement, RU tax law"
+      }
+    },
+    {
+      "lane": "2",
+      "title": {
+        "zh": "海外仓运营",
+        "ru": "Зарубежный склад",
+        "en": "Overseas warehouse"
+      },
+      "text": {
+        "zh": "管理货物入库、出库、库存等仓储环节，制定并执行海外仓运营策略，提高效率、降低成本。",
+        "ru": "Приёмка, отгрузка и управление запасами; разработка и реализация стратегии работы склада — выше эффективность, ниже затраты.",
+        "en": "Running inbound, outbound and inventory operations; setting and executing warehouse strategies to raise efficiency and cut costs."
+      },
+      "tools": {
+        "zh": "仓储管理, 成本控制",
+        "ru": "Склад, Затраты",
+        "en": "Warehousing, Cost control"
+      }
+    },
+    {
+      "lane": "2",
+      "title": {
+        "zh": "团队管理",
+        "ru": "Управление командой",
+        "en": "Team management"
+      },
+      "text": {
+        "zh": "负责海外仓人事与财务管理，协调中外员工和当地合作伙伴，用俄语进行跨文化沟通协作。",
+        "ru": "Кадровое и финансовое управление зарубежным складом; координация китайских и местных сотрудников и партнёров; межкультурное общение на русском языке.",
+        "en": "HR and finance management of the overseas warehouse; coordinating Chinese and local staff and partners; cross-cultural communication in Russian."
+      },
+      "tools": {
+        "zh": "俄语沟通, 绩效考核, 跨文化协作",
+        "ru": "Русский, KPI, Коммуникация",
+        "en": "Russian, KPI, Cross-cultural"
+      }
+    },
+    {
+      "lane": "2",
+      "title": {
+        "zh": "客户方案",
+        "ru": "Решения для клиентов",
+        "en": "Client solutions"
+      },
+      "text": {
+        "zh": "对接客户与内部部门，深入理解客户需求，提供物流和仓储解决方案，确保客户满意度。",
+        "ru": "Работа с клиентами и внутренними отделами: понимание потребностей, логистические и складские решения, высокий уровень сервиса.",
+        "en": "Working with clients and internal teams to understand needs and deliver logistics and warehousing solutions that keep customers satisfied."
+      },
+      "tools": {
+        "zh": "需求分析, 方案设计",
+        "ru": "Анализ, Проектирование",
+        "en": "Needs analysis, Solutions"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "label": {
+        "zh": "2023.06 – 至今",
+        "ru": "2023.06 – н. в.",
+        "en": "2023.06 – present"
+      },
+      "title": {
+        "zh": "海外仓运营主管（外派）",
+        "ru": "Руководитель зарубежного склада (командировка)",
+        "en": "Overseas Warehouse Supervisor (posted abroad)"
+      },
+      "summary": {
+        "zh": "杭州驿优国际物流有限公司。负责海外仓人事、财务管理；协调入库、出库、库存等运作流程；针对海外运营的特殊需求制定并执行运营策略，提高效率、降低成本；对接客户与内部部门，提供物流和仓储解决方案。",
+        "ru": "Hangzhou Yiyou International Logistics (杭州驿优). Кадровое и финансовое управление зарубежным складом; координация приёмки, отгрузки и запасов; разработка и выполнение операционной стратегии с учётом специфики работы за рубежом — рост эффективности и снижение затрат; взаимодействие с клиентами и отделами по логистическим и складским решениям.",
+        "en": "Hangzhou Yiyou International Logistics (杭州驿优). HR and finance management of the overseas warehouse; coordinating inbound, outbound and inventory flows; designing and executing overseas operations strategies for efficiency and cost; liaising with clients and internal departments on logistics and warehousing solutions."
+      },
+      "metrics": {
+        "zh": "海外仓管理, 人事财务, 降本增效, 客户方案",
+        "ru": "Склад, Кадры и финансы, Снижение затрат, Решения",
+        "en": "Warehouse ops, HR & finance, Cost reduction, Solutions"
+      },
+      "image": "assets/cases/warehouse.svg",
+      "color": "lavender",
+      "link": "",
+      "button": {
+        "zh": "查看职责",
+        "ru": "Обязанности",
+        "en": "See the role"
+      }
+    },
+    {
+      "label": {
+        "zh": "2021.10 – 2023.06",
+        "ru": "2021.10 – 2023.06",
+        "en": "2021.10 – 2023.06"
+      },
+      "title": {
+        "zh": "关务主管",
+        "ru": "Руководитель таможенного оформления",
+        "en": "Customs Supervisor"
+      },
+      "summary": {
+        "zh": "杭州捷网国际物流有限公司。负责中俄班列和卡航的通关、到货安排及清关资料准备；对接报关行、清关行完成海关查验；处理转关、清关等异常事件；统计分析关税价格，协助开发关税系统，拓展清关代理合作。",
+        "ru": "Hangzhou Jiewang International Logistics (杭州捷网). Таможенное оформление ж/д и автоперевозок Китай–Россия, подготовка документов, работа с брокерами и таможенным досмотром; решение вопросов транзита и нештатных ситуаций; анализ тарифов, разработка тарифной системы, расширение партнёрской сети брокеров.",
+        "en": "Hangzhou Jiewang International Logistics (杭州捷网). Clearance and arrival arrangements for China–Russia rail and truck lines; customs documentation; inspection handling with brokers; transit and clearance exceptions; tariff analytics, tariff-system development, expanding customs broker partnerships."
+      },
+      "metrics": {
+        "zh": "中俄班列, 卡航, 清关单证, 关税分析",
+        "ru": "Ж/д и авто, Документы, Тарифы",
+        "en": "Rail & truck, Customs docs, Tariff analysis"
+      },
+      "image": "assets/cases/customs-train.svg",
+      "color": "lilac",
+      "link": "",
+      "button": {
+        "zh": "查看职责",
+        "ru": "Обязанности",
+        "en": "See the role"
+      }
+    },
+    {
+      "label": {
+        "zh": "2019.4 – 2021.10",
+        "ru": "2019.4 – 2021.10",
+        "en": "2019.4 – 2021.10"
+      },
+      "title": {
+        "zh": "客服主管",
+        "ru": "Руководитель клиентского сервиса",
+        "en": "Customer Service Supervisor"
+      },
+      "summary": {
+        "zh": "杭州捷网国际物流有限公司。管理客户服务组、账单结算组、订单运营组；制定并落实客服绩效考核制度，标准化业务操作流程；搭建渠道线路时效监控指标和数据分析报表；梳理结算流程 SOP，优化结算系统，推动整体结算效率提升。",
+        "ru": "Hangzhou Jiewang International Logistics (杭州捷网). Управление группами клиентского сервиса, расчётов и обработки заказов; внедрение системы KPI и стандартизация процессов; мониторинг сроков доставки и аналитика; оптимизация процессов и системы расчётов — рост общей эффективности.",
+        "en": "Hangzhou Jiewang International Logistics (杭州捷网). Managing customer service, billing settlement and order operations groups; KPI systems and standardized workflows; lane transit-time monitoring and analytics; settlement SOPs and system optimization that lifted overall settlement efficiency."
+      },
+      "metrics": {
+        "zh": "团队管理, 绩效考核, 时效监控, 结算 SOP",
+        "ru": "Команда, KPI, Мониторинг, Расчёты",
+        "en": "Team, KPI, Monitoring, Settlement SOP"
+      },
+      "image": "assets/cases/service.svg",
+      "color": "pink",
+      "link": "",
+      "button": {
+        "zh": "查看职责",
+        "ru": "Обязанности",
+        "en": "See the role"
+      }
+    },
+    {
+      "label": {
+        "zh": "2017.7 – 2019.4",
+        "ru": "2017.7 – 2019.4",
+        "en": "2017.7 – 2019.4"
+      },
+      "title": {
+        "zh": "经理助理",
+        "ru": "Ассистент руководителя",
+        "en": "Assistant Manager"
+      },
+      "summary": {
+        "zh": "上海捷网国际物流有限公司。跟踪处理国际物流问题件，与国外同事沟通解决物流异常；协助部门经理安排和监督工作，初步制定部门绩效方案；为公司俄语网站翻译内容，协助营销推广；经常性驻外出差，管理海外仓日常工作。",
+        "ru": "Shanghai Jiewang International Logistics (上海捷网). Отслеживание и решение проблемных международных отправок вместе с зарубежными коллегами; организация работы отдела и первые системы KPI; перевод русскоязычного сайта компании и поддержка маркетинга; частые командировки и управление текущей работой зарубежного склада.",
+        "en": "Shanghai Jiewang International Logistics (上海捷网). Tracking and resolving international shipment exceptions with overseas colleagues; supporting department planning and first KPI drafts; translating the company's Russian website and supporting marketing; frequent overseas trips managing day-to-day warehouse operations."
+      },
+      "metrics": {
+        "zh": "俄语翻译, 问题件处理, 海外仓, 部门协调",
+        "ru": "Перевод, Проблемные грузы, Склад, Координация",
+        "en": "RU translation, Exceptions, Warehouse, Coordination"
+      },
+      "image": "assets/cases/assistant.svg",
+      "color": "orchid",
+      "link": "",
+      "button": {
+        "zh": "查看职责",
+        "ru": "Обязанности",
+        "en": "See the role"
+      }
+    }
+  ],
+  "brands": [
+    {
+      "name": {
+        "zh": "杭州驿优国际物流",
+        "ru": "Hangzhou Yiyou International Logistics",
+        "en": "Hangzhou Yiyou International Logistics"
+      },
+      "via": "",
+      "logo": ""
+    },
+    {
+      "name": {
+        "zh": "杭州捷网国际物流",
+        "ru": "Hangzhou Jiewang International Logistics",
+        "en": "Hangzhou Jiewang International Logistics"
+      },
+      "via": "",
+      "logo": ""
+    },
+    {
+      "name": {
+        "zh": "上海捷网国际物流",
+        "ru": "Shanghai Jiewang International Logistics",
+        "en": "Shanghai Jiewang International Logistics"
+      },
+      "via": "",
+      "logo": ""
+    }
+  ],
+  "certs": [
+    {
+      "name": {
+        "zh": "俄语专业八级证书",
+        "ru": "Сертификат TEM-8 (русский язык)",
+        "en": "Russian TEM-8 Certificate"
+      },
+      "image": "assets/certs/russian-8.svg",
+      "link": ""
+    },
+    {
+      "name": {
+        "zh": "全国计算机二级证书",
+        "ru": "Сертификат NCRE, уровень 2",
+        "en": "NCRE Level 2 Certificate"
+      },
+      "image": "assets/certs/ncre-2.svg",
+      "link": ""
+    }
+  ],
+  "lab": [
+    {
+      "title": {
+        "zh": "语言能力",
+        "ru": "Языки",
+        "en": "Languages"
+      },
+      "text": {
+        "zh": "俄语专业八级 · 英语 CET-4 · 普通话二级甲等",
+        "ru": "Русский TEM-8 · английский CET-4 · путунхуа 2A",
+        "en": "Russian TEM-8 · English CET-4 · Mandarin 2-A"
+      },
+      "link": "",
+      "color": "lavender"
+    },
+    {
+      "title": {
+        "zh": "计算机能力",
+        "ru": "ИТ-навыки",
+        "en": "IT skills"
+      },
+      "text": {
+        "zh": "全国计算机二级 · 熟练使用 Word、Excel",
+        "ru": "NCRE уровень 2 · уверенный Word и Excel",
+        "en": "NCRE Level 2 · proficient in Word and Excel"
+      },
+      "link": "",
+      "color": "lilac"
+    },
+    {
+      "title": {
+        "zh": "海外经验",
+        "ru": "Опыт за рубежом",
+        "en": "Overseas experience"
+      },
+      "text": {
+        "zh": "俄罗斯驻外 · 海外仓运营与海外财务管理",
+        "ru": "Командировка в Россию · склад и финансы",
+        "en": "Posted to Russia · warehouse and finance management"
+      },
+      "link": "",
+      "color": "pink"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": {
+        "zh": "俄语口译专业硕士研究生，2015.9 – 2017.6",
+        "ru": "Магистратура, устный перевод (русский), 2015.9 – 2017.6",
+        "en": "Master's degree in Russian Interpretation, 2015.9 – 2017.6"
+      },
+      "name": {
+        "zh": "内蒙古师范大学",
+        "ru": "Педуниверситет Внутренней Монголии",
+        "en": "Inner Mongolia Normal University"
+      },
+      "role": {
+        "zh": "俄语口译 · 硕士",
+        "ru": "Устный перевод · магистр",
+        "en": "Russian Interpretation · MA"
+      },
+      "photo": "assets/certs/edu-master.svg"
+    },
+    {
+      "quote": {
+        "zh": "俄语口译专业本科，2011.9 – 2015.6",
+        "ru": "Бакалавриат, устный перевод (русский), 2011.9 – 2015.6",
+        "en": "Bachelor's degree in Russian Interpretation, 2011.9 – 2015.6"
+      },
+      "name": {
+        "zh": "安徽师范大学",
+        "ru": "Аньхойский педагогический университет",
+        "en": "Anhui Normal University"
+      },
+      "role": {
+        "zh": "俄语口译 · 学士",
+        "ru": "Устный перевод · бакалавр",
+        "en": "Russian Interpretation · BA"
+      },
+      "photo": "assets/certs/edu-bachelor.svg"
+    },
+    {
+      "quote": {
+        "zh": "六年国际物流行业经验，覆盖运营、客服、财务、关务全链路，愿以俄语为桥，助力中俄业务。",
+        "ru": "Шесть лет в международной логистике: операции, сервис, финансы и таможня. Русский язык — мой мост между Китаем и Россией.",
+        "en": "Six years across operations, service, finance and customs — building China–Russia business with Russian as my bridge."
+      },
+      "name": {
+        "zh": "徐小娟",
+        "ru": "Сюй Сяоцзюань",
+        "en": "Xu Xiaojuan"
+      },
+      "role": {
+        "zh": "俄罗斯外贸 · 国际物流 · 俄语相关",
+        "ru": "Торговля с Россией · логистика · русский язык",
+        "en": "Russia trade · Logistics · Russian"
+      },
+      "photo": ""
+    }
+  ],
+  "contact": {
+    "title_a": {
+      "zh": "中俄物流与俄语岗位",
+      "ru": "Логистика Китай–Россия",
+      "en": "China–Russia logistics"
+    },
+    "title_b": {
+      "zh": "期待您的联系",
+      "ru": "— буду рада вашему письму",
+      "en": "and Russian-language roles — let's talk"
+    },
+    "facts": {
+      "zh": "求职意向：俄罗斯外贸 · 国际物流 · 俄语相关 ｜ 女 · 29 岁 ｜ 六年行业经验 ｜ 俄语专业八级",
+      "ru": "Ищу: торговля с Россией · международная логистика · работа с русским языком ｜ 6 лет в отрасли ｜ русский TEM-8",
+      "en": "Open to: Russia trade · international logistics · Russian-language roles | 6 years in the industry | Russian TEM-8"
+    }
+  }
+}

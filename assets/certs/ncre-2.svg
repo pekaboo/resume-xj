@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144">
+  <path d="M56 108 l-14 30 18 -8 8 16 12 -30z" fill="#C0C4F3" stroke="#2B2A57" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M88 108 l14 30 -18 -8 -8 16 -12 -30z" fill="#E4CFF2" stroke="#2B2A57" stroke-width="5" stroke-linejoin="round"/>
+  <circle cx="72" cy="64" r="54" fill="#E4CFF2" stroke="#2B2A57" stroke-width="6"/>
+  <g fill="#E4CFF2" stroke="#2B2A57" stroke-width="4.5">
+    <circle cx="72" cy="8" r="7"/><circle cx="102" cy="18" r="7"/><circle cx="122" cy="46" r="7"/>
+    <circle cx="122" cy="82" r="7"/><circle cx="102" cy="110" r="7"/><circle cx="72" cy="120" r="7"/>
+    <circle cx="42" cy="110" r="7"/><circle cx="22" cy="82" r="7"/><circle cx="22" cy="46" r="7"/><circle cx="42" cy="18" r="7"/>
+  </g>
+  <circle cx="72" cy="64" r="37" fill="#FDF8EC" stroke="#2B2A57" stroke-width="5"/>
+  <rect x="54" y="44" width="36" height="26" rx="4" fill="#6A55C8" stroke="#2B2A57" stroke-width="4"/>
+  <path d="M62 70 v6 h20 v-6 M72 70 v6" fill="none" stroke="#2B2A57" stroke-width="4" stroke-linecap="round"/>
+  <text x="72" y="91" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800" fill="#2B2A57">NCRE-2</text>
+</svg>
